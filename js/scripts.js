@@ -73,6 +73,10 @@ hotel.roomsBooked = 40;
 
 console.log(hotel.checkAvailability());
 
+// An anlernative way to loop over the room types
+
+hotel.roomTypes.forEach( element => { console.log(element);
+                                   } );
 
 
 
