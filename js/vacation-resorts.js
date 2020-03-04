@@ -3,7 +3,7 @@
     // STOP the submission (event!)
     // event.preventDefault(); 
 
-function onclick(event)  { addResort() }
+// function onclick(event)  { addResort() }
 
 function addResort() {
     console.log("running")
