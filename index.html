@@ -11,12 +11,12 @@
         <link rel="stylesheet" href="./css/main.css">
 
         <!-- Scripts: -->
-        <script type="text/javascript" src="./js/scripts.js" defer></script>
-        <script type="text/javascript" src="./js/vacation-resort.js" defer></script>
+        <!-- <script type="text/javascript" src="./js/scripts.js" defer></script> -->
+        <script type="text/javascript" src="./js/vacation-resorts.js" defer></script>
     </head>
     <body>
         <h1>JavaScript-in-Class</h1>
-        <form action="#" method="GET">
+        <form id="input" action="#" method="GET">
             <h2>Hotels Form</h2>
             <label for="resort-name">
                 Resort name
@@ -28,7 +28,7 @@
             </label>
             <label for="employee-name">
                 Employee name
-                <input type="text" id="resort-employee-name">
+                <input type="text" id="employee-name">
             </label>
             <label for="employee-id">
                 Employee ID
@@ -42,7 +42,7 @@
                 Employee favourite dessert
                 <input type="text" id="employee-dessert">
             </label>
-            <button onclick="myVacationResort.main();">
+            <button onclick="addResort()">
                 Add
             </button>
         </form>
