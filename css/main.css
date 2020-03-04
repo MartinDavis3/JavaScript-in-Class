@@ -1,0 +1,17 @@
+form {
+    width: 400px;
+}
+
+form label,
+form input {
+    display: block;
+    text-align: left;
+    padding: 6px;
+}
+
+form button {
+    width: 100px;
+    height: 35px;
+    left: 100px;
+    margin: 20px;
+}

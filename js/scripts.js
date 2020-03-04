@@ -80,7 +80,5 @@ hotel.roomTypes.forEach( element => { console.log(element);
 
 // end 3 Mar
 
-dummy = 50
-
 
 
