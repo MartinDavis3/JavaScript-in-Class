@@ -6,20 +6,26 @@ function addResort() {
 
     var newVacationResort = new VacationResort(resortNameInput, resortAddressInput, resortPhoneInput, resortBookingsInput);
 
-    var newTr = document.createElement("tr");
-    // newTr.appendChild(newTr);
-    var currentTr = document.getElementById("tr");
-    document.body.insertBefore(newTr, currentTr);
+    var newRow = document.createElement( 'TR' );
 
     for(resProp in newVacationResort) {
-        var newTd = document.createElement("td");
-        var newContent = document.createTextNode(newVacationResort[resProp]);
-        newTd.appendChild(newContent);
-        var currentTd = document.getElementById("td");
-        document.body.insertBefore(newTd, currentTd);
+        var newTd = document.createElement( 'TD' );
+        newTd.textContent = newVacationResort[resProp];
+        newRow.appendChild(newTd)
     }
-}   
- 
+   
+    // Target your table body.
+    var tableBody = document.getElementById( 'table-body' );
+    tableBody.appendChild( newRow ); // Inject the brand new row, so the user can see it! Yay!
+
+    document.querySelector("#resort-name").value = "";
+    document.querySelector("#resort-address").value = "";
+    document.querySelector("#resort-phone").value = "";
+    document.querySelector("#resort-bookings").value = "";
+
+
+} 
+
 //constructor
 
 function VacationResort(resortName, resortAddress, resortPhone, resortBookings) {
