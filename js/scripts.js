@@ -45,6 +45,7 @@ console.log(animals(1,1,1));
 // var x = numStr.length - numStr.indexOf(".") - 1;
 // console.log(numberOfDecimalPlaces(4.723));
 
+/*
 var hotel = {
     name: "The Quay",
     totalRooms: 40,
@@ -77,8 +78,27 @@ console.log(hotel.checkAvailability());
 
 hotel.roomTypes.forEach( element => { console.log(element);
                                    } );
+*/
 
 // end 3 Mar
 
+// edabit challenges
+// Traiangular dots
+// Number of dots that form a triangle of n rows
+// Start of series: 1, 3, 6, 10, 15
+// Create function triangle(n) that returns number of dots for n rows
 
+var result = triangle(8);
+console.log(result)
 
+function triangle(n) {
+    if( n === 1 ) {
+        return 1;
+    } else {
+        return n + triangle(n-1);
+    }
+}
+
+//finished for  5 Mar
+
+var dum = 5
